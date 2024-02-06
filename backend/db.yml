@@ -15,6 +15,12 @@ services:
       - MYSQL_DATABASE=2021-mnts
       - MYSQL_TCP_PORT=3306
 
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8087:8080   
+
 # volumes:
 #   db-store:
 #     name: 2021-mnts-db-store
